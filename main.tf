@@ -8,7 +8,7 @@ terraform {
   }
   cloud {
 
-    organization = "parctice"
+    organization = "kamakloud"
 
     workspaces {
       name = "TerraformCI"
@@ -22,13 +22,13 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "1-ebfcadc5-playground-sandbox"
+  name     = "1-6167bf44-playground-sandbox"
   location = "South Central US"
 
 }
 
 resource "azurerm_storage_account" "storage" {
-  name                     = "kamastorage102"
+  name                     = "kamastorage100"
   location                 = azurerm_resource_group.rg.location
   resource_group_name      = azurerm_resource_group.rg.name
   account_tier             = "Standard"
