@@ -23,7 +23,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "1-6167bf44-playground-sandbox"
-  location = "South Central US"
+  location = "East US"
 
 }
 
